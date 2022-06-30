@@ -1,0 +1,91 @@
+.bind_email {
+  width: 588Px;
+  height: 525Px;
+  background: url("./assets/bind_email_bg.png") center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 159Px;
+  box-sizing: border-box;
+}
+
+.email_address {
+  width: 420Px;
+}
+
+.password, .confirm_passward {
+  width: 420Px;
+}
+
+.verify {
+  margin: 0 auto;
+}
+
+.agreement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 14Px;
+  margin-left: 84Px;
+  .select {
+    width: 12Px;
+    height: 12Px;
+    border: 1px solid #21A0FF;
+    margin-right: 9Px;
+
+    &.selected {
+      background: #21A0FF;
+      border: 1px solid #21A0FF;
+    }
+  }
+
+  .user, .privacy {
+    opacity: 0.8;
+    font-family: Avenir-Heavy;
+    font-size: 14px;
+    color: #21A0FF;
+    text-decoration:underline;
+    font-weight: bold;
+  }
+
+  .privacy {
+    margin-right: 6Px;
+  }
+
+}
+
+.password, .confirm_password {
+  width: 420Px;
+}
+
+.bind_email_button, .bind_email_button_disabled {
+  width: 170Px;
+  height: 31Px;
+  line-height: 31Px;
+  margin: 18Px auto 0;
+  cursor: pointer;
+  text-align: center;
+  font-family: Avenir-Heavy;
+  font-size: 12px;
+  color: #FFFFFF;
+  background: url("./assets/bind_email_button.png") center / cover no-repeat;
+}
+
+.bind_email_button_disabled {
+  cursor: not-allowed;
+  background: url("./assets/bind_email_button_disabled.png") center / cover no-repeat;
+}
+
+.sign_in_back {
+  width: 170Px;
+  height: 32Px;
+  line-height: 32Px;
+  margin-top: 14Px;
+  font-family: Avenir-Heavy;
+  font-size: 12Px;
+  color: rgba(224, 167, 92, 0.6);
+  text-align: center;
+  border: 1Px solid #E0A75C;
+  cursor: pointer;
+}

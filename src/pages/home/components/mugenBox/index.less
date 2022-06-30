@@ -1,0 +1,205 @@
+.mugen-box {
+    .coming-soon {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .mugen-box-container {
+        .count-down-warpper {
+            width: 1110px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            height: 108px;
+            background: url('../../assets/countDownBg.png') no-repeat;
+            background-size: 80% auto;
+            background-position: center;
+
+            .text {
+                font-size: 14px;
+                line-height: 18px;
+                color: #ffffff;
+                text-align: right;
+                margin-top: 40px;
+            }
+
+            .left {
+                width: 494px;
+                padding-right: 15px;
+                text-align: right;
+            }
+
+            .right {
+                width: 494px;
+                padding-left: 15px;
+                text-align: left;
+                text-overflow: initial;
+            }
+
+            .count-down-time {
+                font-family: 'DottedSongtiDiamondRegular';
+                font-size: 40px;
+                width: 420px;
+                color: #ffffff;
+                text-align: center;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .mugen-boxes-desc {
+            width: 1110px;
+            margin: 0 auto;
+
+            .box-detail {
+                height: 520px;
+                margin: 100px 0 100px;
+                display: flex;
+
+                .common-img {
+                    flex: 0 520px;
+                    width: 520px;
+                    height: 506px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+
+                    .box-count-down {
+                        width: 240px;
+                        height: 57px;
+                        background: url('../../assets/box-count-down-bg.png') no-repeat;
+                        background-size: cover;
+                        position: absolute;
+                        bottom: 88px;
+                        left: 0px;
+                        display: flex;
+                        padding: 17px 0 0 37px;
+
+                        .time {
+                            font-family: DINAlternate-Bold;
+                            font-size: 30px;
+                            color: #02fbff;
+                            text-align: center;
+                            margin-right: 16px;
+                        }
+
+                        // .day {
+                        //   left: 57px;
+                        // }
+                        // .hour {
+                        //   left: 134px;
+                        // }
+                        // .minute {
+                        //   left: 205px;
+                        // }
+                        // .second {
+                        //   left: 280px;
+                        // }
+                    }
+                }
+
+                .intro-and-action {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 75px;
+                    margin-left: 60px;
+
+                    .title {
+                        font-family: Avenir-Black;
+                        font-size: 36px;
+                        color: #ebe2ff;
+                    }
+
+                    .desc {
+                        flex: 1 1;
+                        margin-top: 20px;
+                        opacity: 0.6;
+                        font-family: Avenir-Medium, Microsoft YaHei;
+                        font-size: 18px;
+                        color: #ffffff;
+                        text-align: justify;
+                        line-height: 36px;
+                    }
+
+                    .action {
+                        margin-bottom: 23px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+
+                        .remain {
+                            .num {
+                                font-family: DINAlternate-Bold;
+                                font-size: 50px;
+                                color: #ff5fff;
+                                font-weight: 800;
+                                text-align: center;
+                            }
+
+                            .val-desc {
+                                font-family: Avenir-Medium, Microsoft YaHei;
+                                font-size: 12px;
+                                color: #9E9D9F
+                            }
+                        }
+
+                        .uint {
+                            color: #fff;
+                            font-size: 16px;
+                        }
+
+                        .sell-price {
+                            color: #fff;
+                            font-size: 36px;
+                        }
+
+                        .price {
+                            .price-container {
+                                height: 40px;
+
+                                .unit {
+                                    font-family: Avenir-Heavy;
+                                    font-size: 24px;
+                                    color: #ffffff;
+                                }
+
+                                .num {
+                                    font-family: DINAlternate-Bold;
+                                    font-size: 36px;
+                                    color: #ffffff;
+                                }
+                            }
+
+                            .val-desc {
+                                font-family: Avenir-Medium, Microsoft YaHei;
+                                font-size: 18px;
+                                color: #9E9D9F
+                            }
+                        }
+
+                        .buy {
+                            height: 52px;
+                            width: 198px;
+                            background: url('../../../../assets/images/btnAbleBg.png') no-repeat;
+                            background-size: cover;
+                            font-family: Avenir-Heavy;
+                            font-size: 16px;
+                            color: #ffffff;
+                            text-align: center;
+                            line-height: 52px;
+                            cursor: pointer;
+
+                            &.disable {
+                                background-image: url('../../../../assets/images/btnDisableBg.png');
+                                cursor: default;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.close{
+   margin-left: auto;
+   z-index: 1;
+   width: 30Px;
+   height: 30Px;
+   cursor: pointer;
+}
+
+.close_icon{
+    transform: translateY(12Px);
+}
+
+.close_icon::before,.close_icon::after{
+    content: " ";
+    position: absolute;
+    height: 2.5Px;
+    width: 22Px;
+    background-color: #7d44ff;
+    border-radius: 3px;
+}
+
+.close_icon::before{
+    transform: rotate(45deg);
+}
+
+.close_icon::after{
+    transform: rotate(-45deg);
+}

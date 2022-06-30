@@ -1,0 +1,245 @@
+.layout {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 90px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &.fix-layout {
+        overflow-y: hidden;
+    }
+}
+
+.sidebar {
+    z-index: 40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #1b1230;
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        z-index: 0;
+        background: url('./assets/sidebar.png') center / cover no-repeat;
+    }
+}
+
+.content {
+    position: relative;
+    width: auto;
+    // background-color: #1b1a26;
+    background-color: #15131b;
+    flex-grow: 1;
+    min-height: calc(100vh - 80px);
+    padding-top: 60px;
+    // padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.unity {
+  position: absolute;
+  top: 215px;
+  left: 300px;
+  z-index: 10;
+}
+
+.tabs {
+    margin-top: 80px;
+}
+
+.label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90px;
+    z-index: 1;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    img {
+        padding: 7px;
+        width: 70px;
+        height: 70px;
+    }
+
+    &:hover,
+    &.active {
+        background: rgba(200, 193, 190, 0.1);
+
+        .name {
+            opacity: 1;
+        }
+    }
+
+    &.red-point {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+        }
+    }
+}
+
+.name {
+    opacity: 0.6;
+    font-family: 'Avenir-Black';
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    transition: opacity 0.35s;
+}
+
+.footer {
+    //   position: fixed;
+    //   bottom: 0;
+    left: 0;
+    /*   width: 100vw; */
+    height: 80px;
+    background: #000000;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*   margin-right: 387px; */
+
+    img {
+        width: 90px;
+        height: 22px;
+    }
+
+    .copy-right {
+        opacity: 0.5;
+        font-family: Avenir-Black;
+        font-size: 12px;
+        color: #ffffff;
+        text-align: justify;
+    }
+}
+
+.icon {
+    text-align: justify;
+    margin-right: 50px;
+
+    img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .discord {
+        width: 25px !important;
+        height: 25px;
+    }
+}
+
+.privacy,
+.user {
+    opacity: 0.8;
+    font-family: Avenir-Medium, Microsoft YaHei;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.rule {
+    position: absolute;
+    left: 300px;
+    display: flex;
+    align-content: center;
+}
+
+.rule2 {
+    position: absolute;
+    right: 230px;
+    display: flex;
+    align-content: center;
+}
+
+.user {
+    margin-right: 197px;
+}
+
+.privacy {
+    margin-right: 42px;
+}
+
+.language {
+    position: absolute;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    bottom: 120px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    cursor: pointer;
+    background: url('./assets/language.png') center / cover no-repeat;
+
+    .chooseLang {
+        position: absolute;
+        top: -40px;
+        right: -175px;
+        width: 140px;
+        height: 115px;
+        padding: 20px;
+        box-sizing: border-box;
+        background: #fff9f1;
+        box-shadow: 0 5px 13px 0 rgba(74, 46, 139, 0.2);
+        border-radius: 6px;
+        user-select: none;
+
+        .english {
+            font-family: Avenir-Heavy;
+            font-size: 18px;
+            color: #8f8f8f;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+
+            &.active {
+                color: #946dec;
+            }
+        }
+
+        .line {
+            opacity: 0.1;
+            border: 1px solid #946dec;
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        .japan {
+            font-family: PingFangSC-Semibold;
+            font-size: 18px;
+            color: #8f8f8f;
+            margin-top: 12px;
+            text-align: center;
+            cursor: pointer;
+
+            &.active {
+                color: #946dec;
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.container {
+  width: 950px;
+  height: 720px;
+  color: #fff;
+  border-radius: 10px;
+  margin: 90px auto 0;
+  .title {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 800;
+  }
+  .content {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 22px;
+    font-weight: 200;
+  }
+  .button_list {
+    margin-top: 22px;
+    height: 38px;
+    display: flex;
+  }
+  .button_list input {
+    color: #d1b0ff;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    width: 843px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(108, 43, 249, 0.5);
+    background-color: transparent;
+  }
+
+  .button_list div {
+    width: 132px;
+    font-size: 12px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #9d74f1;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .card_list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    position: relative;
+    width: 285px;
+    margin-top: 42px;
+    border-radius: 16px;
+    height: 162px;
+    background-color: rgba(108, 43, 249, 0.5);
+    background-size: 100% 100%;
+    padding-left: 28px;
+    padding-top: 25px;
+    padding-right: 28px;
+    padding-bottom: 13px;
+    &:nth-child(1) {
+      background-image: url('./assets/card-bg-1.png');
+    }
+    &:nth-child(2) {
+      background-image: url('./assets/card-bg-2.png');
+    }
+    &:nth-child(3) {
+      background-image: url('./assets/card-bg-3.png');
+    }
+  }
+
+  .card div:nth-child(1) {
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  .card div:nth-child(2) {
+    position: absolute;
+    font-size: 12px;
+    right: 28px;
+    bottom: 13px;
+  }
+
+  table {
+    border-collapse: separate;
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 950px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  tr,
+  td,
+  th,
+  table {
+    border: 1px solid #401f8a;
+  }
+  table th {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 60px;
+    font-weight: 800;
+  }
+  table td {
+    font-size: 16px;
+    line-height: 60px;
+  }
+}

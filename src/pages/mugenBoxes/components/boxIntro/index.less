@@ -1,0 +1,275 @@
+.box-intro-container {
+  width: 100%;
+  margin-top: 90px;
+  padding-bottom: 50px;
+
+  .main-content {
+    width: 1400px;
+    margin: auto;
+
+    .tab-list {
+      width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      background: url('../../assets/list-title.png') no-repeat;
+      background-size: 100% 100%;
+      line-height: 3.5;
+
+      .tab-item {
+        cursor: pointer;
+        width: 274px;
+        color: #fff;
+        text-align: center;
+        overflow: auto;
+        font-size: 9px;
+        opacity: 0.6;
+        background: url('../../assets/null.png') no-repeat;
+        transition: opacity 0.6s;
+        background-size: contain;
+        background-position: right center;
+
+        &.active {
+          opacity: 1;
+          background-image: url('../../assets/box-intro-tab-bg.png');
+        }
+      }
+    }
+
+    .tab-content-container {
+      margin-top: 40px;
+      min-height: 566px;
+
+      .box-items-container {
+        display: flex;
+
+        .model-preview {
+          flex-basis: 421px;
+          height: 566px;
+          background-image: linear-gradient(180deg, #030105 40%, #6c6784 100%);
+          opacity: 0.85;
+
+          .model {
+            width: 100%;
+            height: 100%;
+
+            .progress-bar {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #c5c5c5;
+            }
+          }
+        }
+
+        .box-item-list {
+          height: 566px;
+          overflow-y: scroll;
+          margin-left: 20px;
+          flex: 2;
+          display: flex;
+          flex-wrap: wrap;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            width: 10px;
+            border-radius: 6px;
+            background-image: linear-gradient(#9d17d7, #328bcd);
+          }
+
+          &::-webkit-scrollbar-track {
+            border-radius: 6px;
+            background-color: rgba(13, 160, 240, 0.3);
+          }
+
+          .box-item {
+            cursor: pointer;
+            width: 220px;
+            // height: 272px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:nth-child(4n) {
+              margin-right: 0px;
+            }
+
+            &.active {
+              .model-img {
+                &::after {
+                  content: ' ';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: url('../../assets/box-ntf-active-shadow.png')
+                    no-repeat;
+                  background-size: contain;
+                }
+              }
+            }
+
+            .model-img {
+              position: relative;
+              width: 224px;
+              height: 224px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .series-info {
+              color: #ffffff;
+              padding: 6px 0 2px;
+              position: relative;
+
+              .name {
+                font-family: Avenir-Heavy;
+                font-size: 14px;
+                line-height: 22px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+              }
+
+              .series {
+                opacity: 0.7;
+                font-family: Avenir-Medium, Microsoft YaHei;
+                font-size: 12px;
+                line-height: 22px;
+                color: rgba(255, 255, 255, 0.5);
+              }
+
+              &::before {
+                content: ' ';
+                position: absolute;
+                width: 100%;
+                height: 1.2px;
+                bottom: 0;
+                left: 0;
+                background-color: #979797;
+                z-index: 10;
+              }
+
+              &::after {
+                content: ' ';
+                position: absolute;
+                width: 28%;
+                height: 1.2px;
+                bottom: 0;
+                left: 0;
+                background-color: #fff;
+                z-index: 20;
+              }
+            }
+
+            .other-info {
+              margin-top: 5px;
+              display: flex;
+              justify-content: space-between;
+
+              .auther {
+                display: flex;
+
+                .photo {
+                  width: 16px;
+                  height: 16px;
+                  border-radius: 50%;
+                }
+
+                .name {
+                  margin-left: 4px;
+                  font-family: Avenir-Medium, Microsoft YaHei;
+                  font-size: 10px;
+                  color: #ffffff;
+                  line-height: 16px;
+                }
+              }
+
+              .num {
+                opacity: 0.7;
+                font-family: Avenir-Medium, Microsoft YaHei;
+                font-size: 12px;
+                line-height: 16px;
+                color: #ffffff;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+
+      .box-information {
+        img {
+          width: 100%;
+        }
+      }
+
+      .nft-metadata {
+        width: 1314px;
+        margin: auto;
+
+        .th-container {
+          margin-bottom: 20px;
+
+          .th {
+            font-family: Avenir-Heavy;
+            font-size: 20px;
+            color: #7e5ccd;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 180px;
+          }
+        }
+
+        .tr-container {
+          height: 500px;
+          overflow-y: scroll;
+
+          .tr {
+            background: url('../../assets/table-line.png') no-repeat;
+            background-size: contain;
+            font-family: Avenir-Medium, Microsoft YaHei;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 180px;
+            line-height: 60px;
+
+            div {
+              flex: 1 1;
+            }
+          }
+
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            width: 10px;
+            border-radius: 6px;
+            background-image: linear-gradient(#9d17d7, #328bcd);
+          }
+
+          &::-webkit-scrollbar-track {
+            border-radius: 6px;
+            background-color: rgba(13, 160, 240, 0.3);
+          }
+        }
+      }
+    }
+  }
+}

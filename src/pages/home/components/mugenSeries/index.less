@@ -1,0 +1,304 @@
+.mugen-series {
+  background: #1b1a26;
+  padding-bottom: 115px;
+  background: url('../../assets/mugenSeriesBottomBg.png') no-repeat;
+  background-position: 95% bottom;
+  .ip-desc-wapper {
+    width: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .ip-desc-container {
+      width: 1110px;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 47px;
+      .ip-tab-list {
+        width: 600px;
+        height: 60px;
+        background: url('../../assets/mugen-series-title-bg.png') no-repeat;
+        background-size: auto 100%;
+        background-position: -40px center;
+        .ant-select-selector {
+          background-color: transparent;
+          border: none;
+          font-family: Avenir-Heavy;
+          font-size: 16px;
+          color: #ffffff;
+          width: 368px;
+          line-height: 32px;
+          margin: 16px 0 0 120px;
+        }
+      }
+    }
+  }
+  .ip-character-wapper {
+    width: 100%;
+    height: 864px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-bottom: 100px;
+    position: relative;
+    .ip-character-container {
+      width: 1110px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      &::after {
+        content: ' ';
+        position: absolute;
+        width: 150px;
+        height: 420px;
+        background: url('../../assets/character-right-bg.png') no-repeat;
+        background-size: contain;
+        right: -150px;
+        top: 35%;
+      }
+      .character-list {
+        height: 535px;
+        width: 1094px;
+        background: url('../../assets/character-list-bg.png') no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: -360px;
+        bottom: -40px;
+        @startX: 528px;
+        @startY: 146px;
+        @offsetX: 55px;
+        @offsetY: 94px;
+        .character {
+          width: 95px;
+          height: 105px;
+          cursor: pointer;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: url('../../assets/character-normal-border.png') no-repeat;
+          background-size: contain;
+          &.active {
+            background-image: url('../../assets/character-active-border.png');
+          }
+          img {
+            width: 90%;
+            height: 90%;
+            display: inline-block;
+            // mask shape
+            mask: url('../../assets/character-mask-shape.png') no-repeat;
+            mask-size: contain;
+          }
+          &:nth-child(1) {
+            top: @startY;
+            left: @startX;
+          }
+          &:nth-child(2) {
+            top: calc(@startY + @offsetY);
+            left: calc(@startX - @offsetX);
+          }
+          &:nth-child(3) {
+            top: calc(@startY + @offsetY);
+            left: calc(@startX + @offsetX);
+          }
+          &:nth-child(4) {
+            top: calc(@startY + @offsetY);
+            left: calc(@startX + 3 * @offsetX);
+          }
+          &:nth-child(5) {
+            top: calc(@startY + 2 * @offsetY);
+            left: @startX;
+          }
+          &:nth-child(6) {
+            top: calc(@startY + 2 * @offsetY);
+            left: calc(@startX + 2 * @offsetX);
+          }
+          &:nth-child(7) {
+            top: @startY;
+            left: calc(@startX + 2 * @offsetX);
+          }
+          &:nth-child(8) {
+            top: calc(@startY + 2 * @offsetY);
+            left: calc(@startX + 4 * @offsetX);
+          }
+        }
+      }
+      .character-desc {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        height: 603px;
+        width: 628px;
+        background: url('../../assets/characterDescBg.png') no-repeat;
+        background-size: contain;
+        .title {
+          position: absolute;
+          top: 28px;
+          right: 70px;
+          font-family: Avenir-BlackOblique;
+          font-size: 42px;
+          color: #ffffff;
+        }
+        .intro {
+          position: absolute;
+          top: 190px;
+          right: 78px;
+          width: 472px;
+          height: 280px;
+          font-family: Avenir-Medium, Microsoft YaHei;
+          font-size: 22px;
+          color: #000000;
+          text-align: left;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .mugen-boxes-wapper {
+    width: 100%;
+    height: 666px;
+    .mugen-boxes-container {
+      width: 1110px;
+      height: 100%;
+      margin: 0 auto;
+      .mugen-box-list {
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        .box-item {
+          height: 588px;
+          width: 340px;
+          background: no-repeat;
+          background-size: 100% 100%;
+          position: relative;
+          margin-right: 40px;
+          flex: 0 0 340px;
+          &.disable {
+            filter: grayscale(100%);
+            .desc {
+              opacity: 0.6;
+              color: #ffffff;
+            }
+          }
+          &:last-child {
+            margin-right: 0px;
+          }
+          .desc {
+            position: absolute;
+            bottom: 110px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            color: #714ac9;
+            text-align: center;
+            .name {
+              font-family: Avenir-Black;
+              font-size: 18px;
+            }
+            .series {
+              font-family: Avenir-Heavy;
+              font-size: 14px;
+            }
+          }
+          .remain {
+            position: absolute;
+            bottom: 65px;
+            left: 0;
+            right: 0;
+            font-family: Avenir-Medium, Microsoft YaHei;
+            font-size: 18px;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            .text {
+              opacity: 0.5;
+            }
+            .available {
+              font-size: 24px;
+            }
+            .all {
+              opacity: 0.5;
+            }
+          }
+          .buy {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 170px;
+            height: 35px;
+            line-height: 35px;
+            background: url('../../../../assets/images/btnAbleBg.png') no-repeat;
+            background-size: cover;
+            font-family: Avenir-Heavy;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+            &.disable {
+              background-image: url('../../../../assets/images/btnDisableBg.png');
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+  }
+  .special-thanks-warpper {
+    width: 100%;
+    height: 433px;
+    margin-top: 90px;
+    .special-thanks-container {
+      width: 1110px;
+      height: 100%;
+      margin: 0 auto;
+      .author-list {
+        margin-top: 43px;
+        display: flex;
+        overflow-x: auto;
+        .item {
+          width: 270px;
+          height: 357px;
+          background: url('../../assets/specialThanksBg.png') no-repeat;
+          background-size: 100% 100%;
+          position: relative;
+          flex: 0 0 270px;
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0px;
+          }
+          .photo {
+            width: 232px;
+            height: 243px;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            img {
+              width: 100%;
+              height: 100%;
+              mask: url('../../assets/thankPhoto.png') no-repeat;
+              mask-position: left top;
+              mask-size: cover;
+            }
+          }
+          .name {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            font-family: Avenir-Heavy;
+            font-size: 20px;
+            color: #714ac9;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mugen-box-list::scrollbar-button,
+.author-list::scrollbar-button {
+  display: none;
+}

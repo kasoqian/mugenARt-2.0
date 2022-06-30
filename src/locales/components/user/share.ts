@@ -1,0 +1,36 @@
+export const enUserShare = {
+  'user.share.title': 'Referral Link',
+  'user.share.content':
+    'Share your affiliate link with friends and family. When the invitee uses your link to register, your referral code will be automatically applied.',
+  'user.share.copyLink': 'Copy Link',
+  'user.share.copyCode': 'Copy Code',
+  'user.share.copied': 'Copied!',
+  'user.share.totalFri': 'Friends',
+  'user.share.friId': "Friend's User ID",
+  'user.share.date': 'Date',
+  'user.share.noData': 'no Data',
+  'user.share.userId': 'User ID',
+  'user.share.cost': 'Cost',
+  'user.share.reward': 'Bonus',
+  'user.share.invited': 'Successful Referrals',
+  'user.share.amount': 'Total Purchase Amount',
+  'user.share.obtained': 'Total Referral Bonus',
+};
+export const jaUserShare = {
+  'user.share.title': '友達招待',
+  'user.share.content':
+    'リンクを使えば簡単に友だちをMugen ARt へ招待することができます。',
+  'user.share.copyLink': '招待リンク',
+  'user.share.copyCode': '招待コード',
+  'user.share.copied': 'コピーしました',
+  'user.share.totalFri': '紹介したユーザー',
+  'user.share.friId': 'ユーザーID',
+  'user.share.date': '日付',
+  'user.share.noData': 'データなし',
+  'user.share.userId': 'ユーザーID',
+  'user.share.cost': '購入額',
+  'user.share.reward': 'ボーナス',
+  'user.share.invited': '紹介に成功しました',
+  'user.share.amount': '合計紹介購入回数',
+  'user.share.obtained': '合計紹介ボーナス回数',
+};

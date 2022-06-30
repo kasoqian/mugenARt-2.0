@@ -1,0 +1,28 @@
+.title {
+  background-image: url('../../../../../../assets/rule-title.png');
+  background-size: 100% 100%;
+  line-height: 80px;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title::before {
+  content: ' ';
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  transform: translateX(-40px) rotate(45deg);
+}
+
+.title::after {
+  content: ' ';
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  transform: translateX(40px) rotate(45deg);
+}

@@ -1,0 +1,39 @@
+.mask {
+  position: absolute;
+  /* px-to-viewport-ignore-next */
+  width: 259px;
+  /* px-to-viewport-ignore-next */
+  height: 370px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-10px);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid #d8d8d8;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  color: #d8d8d8;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.loading_img {
+  width: 52px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: rotate-360 2s infinite linear;
+  @keyframes rotate-360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

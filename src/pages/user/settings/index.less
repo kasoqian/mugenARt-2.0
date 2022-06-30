@@ -1,0 +1,123 @@
+.container {
+  width: 946px;
+  height: 680px;
+  background: #1C1825;
+  border: 1px solid rgba(108, 43, 249, 0.5);
+  border-radius: 10px;
+  margin: 86px auto 0;
+  display: flex;
+  justify-content: flex-start;
+  :global {
+    .ant-upload-span, .ant-upload-list-item-progress{
+      display: none;
+    }
+  }
+
+  .avator {
+    position: relative;
+    width: 276px;
+    padding: 69px 78px;
+    box-sizing: border-box;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 36px;
+      height: 608px;
+      width: 1px;
+      background-color: rgba(108, 43, 249, 0.4);
+    }
+
+    .user_icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .img_icon {
+      position: absolute;
+      top: 157px;
+      left: 158px;
+      width: 32px;
+      cursor: pointer;
+    }
+  }
+  .form {
+    width: 60%;
+    padding: 42px 19px 42px 78px;
+    box-sizing: border-box;
+
+    .email {
+      margin-top: 32px;
+    }
+
+    .hashPalette {
+      margin-top: 32px;
+    }
+
+    .without_hashPalette {
+      width: 518px;
+      margin-top: 32px;
+
+      .title {
+        font-family: Avenir-Heavy;
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 14px;
+      }
+
+      .hashPalette_button {
+        margin-top: 14px;
+        width: 100%;
+        height: 38px;
+        background: #7B41FF;
+        font-family: Avenir-Medium, Microsoft YaHei;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        border: 0;
+        cursor: pointer;
+      }
+    }
+
+    .without_twitter, .without_google {
+      width: 518px;
+      margin-top: 32px;
+
+      .title {
+        font-family: Avenir-Heavy;
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 14px;
+      }
+
+      button {
+        margin-top: 14px;
+        width: 100%;
+        height: 38px;
+        opacity: 0.7;
+        background-color: rgba(212, 191, 255, 0.2);
+        font-family: Avenir-Medium, Microsoft YaHei;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        border: 0;
+        cursor: not-allowed;
+      }
+    }
+
+    .flow {
+      margin-top: 32px;
+    }
+
+    .twitter {
+      margin-top: 32px;
+    }
+
+    .google {
+      margin-top: 32px;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.result-card {
+  width: 262px;
+  height: 88px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #06060A center / cover no-repeat;
+
+  & > img {
+    width: 41px;
+    height: auto;
+  }
+
+  & > .card-right {
+    margin-left: 16px;
+    display: flex;
+    flex: 0 0 180px;
+    width: 180px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    & > .title {
+      font-family: Avenir-Heavy;
+      font-size: 16px;
+      line-height: 22px;
+      background-clip: text;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: transparent;
+
+      &.level-1 {
+        background-image: linear-gradient(to bottom, #fff, #fff);
+      }
+
+      &.level-2 {
+        background-image: linear-gradient(to right, #03ab40, #c2fe95);
+      }
+
+      &.level-3 {
+        background-image: linear-gradient(to right, #3852e5, #26d0ce);
+      }
+
+      &.level-4 {
+        background-image: linear-gradient(to right, #fffecf, #f59d21);
+      }
+
+      &.level-5 {
+        background-image: linear-gradient(
+          to right,
+          #ffda64 0%,
+          #ff8efd 31.31%,
+          #70a8ff 52.49%,
+          #f9c977 71.74%,
+          #9e1fff 100%
+        );
+      }
+    }
+
+    & > .sub-title {
+      margin-top: 4px;
+      font-family: Avenir-Heavy;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 16px;
+    }
+
+    & > .content-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      font-size: 12px;
+      line-height: 16px;
+
+      & > .edition {
+        width: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Avenir-Heavy;
+        color: #ffffff;
+      }
+
+      & > .address {
+        margin-left: 12px;
+        width: 74px;
+        font-family: Avenir-Medium, Microsoft YaHei;
+        color: rgba(255, 255, 255, 0.4);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}

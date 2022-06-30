@@ -1,0 +1,128 @@
+.intro-warpper {
+    height: 710px;
+    background: #15131b url('../../assets/introBg.png') no-repeat;
+    background-size: auto 100%;
+    background-position: center top;
+    transform: translateX(100px);
+
+    .intro {
+        width: 1110px;
+        height: 100%;
+        padding-top: 97px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .img-list {
+            padding-top: 32px;
+            position: relative;
+
+            .common {
+                width: 630px;
+                transform: translateX(-50px);
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .ntf {
+                transform: translate(-75px, -25px);
+            }
+
+            .ar-function {
+                .download-app-btn {
+                    right: 100px;
+                    top: 280px;
+                }
+            }
+
+            .mugen-box {
+                .buy {
+                    position: absolute;
+                    right: 120px;
+                    top: 320px;
+                    height: 33px;
+                    width: 140px;
+                    background: url('../../../../assets/images/btnAbleBg.png') no-repeat;
+                    background-size: cover;
+                    font-family: Avenir-Heavy;
+                    font-size: 16px;
+                    color: #ffffff;
+                    text-align: center;
+                    line-height: 33px;
+                }
+            }
+
+            .mugen-space {
+                width: 730px;
+                transform: translateX(-150px);
+            }
+        }
+
+        .btn-list {
+            flex-basis: 300px;
+
+            .common {
+                transition: transform 1s, background 0.6s;
+                background: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 212px;
+                height: 73px;
+                cursor: pointer;
+            }
+
+            @basicX: -10px;
+            /* start X */
+            @basicY: 38px;
+            /* start Y */
+            @offsetX: 50px;
+            /* next position relative last position offset X */
+            @offsetY: 33px;
+            /* next position relative last position offset Y */
+            @moveX: 80px;
+
+            /* move X */
+            .ntf-btn {
+                transform: translate(@basicX, @basicY);
+
+                &.active {
+                    transform: translate(calc(@basicX - @moveX), @basicY);
+                }
+            }
+
+            .ar-function-btn {
+                transform: translate(calc(@basicX - @offsetX * 1),
+                        calc(@basicY + @offsetY * 1));
+
+                &.active {
+                    transform: translate(calc(@basicX - @offsetX * 1 - @moveX),
+                            calc(@basicY + @offsetY * 1));
+                }
+            }
+
+            .mugen-box-btn {
+                transform: translate(calc(@basicX - @offsetX * 2),
+                        calc(@basicY + @offsetY * 2));
+
+                &.active {
+                    transform: translate(calc(@basicX - @offsetX * 2 - @moveX),
+                            calc(@basicY + @offsetY * 2));
+                }
+            }
+
+            .mugen-space-btn {
+                transform: translate(calc(@basicX - @offsetX * 3),
+                        calc(@basicY + @offsetY * 3));
+
+                &.active {
+                    transform: translate(calc(@basicX - @offsetX * 3 - @moveX),
+                            calc(@basicY + @offsetY * 3));
+                }
+            }
+        }
+    }
+}

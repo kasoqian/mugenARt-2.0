@@ -1,0 +1,115 @@
+@emil-font-color: rgba(255, 255, 255, 0.6);
+.title {
+  background: rgb(121, 242, 157);
+}
+
+.twitter,.google{
+    width: 400px; 
+}
+
+.google{
+    text-align: right;
+}
+
+.twitter{
+    text-align: left;
+}
+
+.container {
+  width: 1005px;
+  margin: auto;
+  color: white;
+  margin-top: 120px;
+  text-align: center;
+  h1,
+  h2,
+  span {
+    color: inherit;
+  }
+  .avator {
+    img {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+    }
+    .wallet {
+      padding-top: 8px;
+      .wallet_address {
+        line-height: 1.5;
+        font-size: 110%;
+      }
+    }
+    .email_address {
+      font-size: 16px;
+      line-height: 1.5;
+      color: @emil-font-color;
+    }
+  }
+
+  .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    color: @emil-font-color;
+    :nth-child(2) {
+      width: 10%;
+    }
+    .email_icon {
+      background: white;
+      border-radius: 50%;
+      padding: 3px;
+      color: rgba(0, 0, 0, 0.85);
+      margin-right: 8px;
+      font-size: 90%;
+      text-align: center;
+      text-align: center;
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 46px;
+    background-image: url('../assets//UserInfoDivider.png');
+    background-position: center;
+  }
+  .chain {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .chain_card {
+      width: 350px;
+      margin: 0 48px;
+      height: 165px;
+      border-radius: 20px;
+      display: flex;
+      padding: 20px;
+      text-align: left;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      div {
+        align-self: flex-end;
+        word-break: break-all;
+      }
+    }
+    .chain_card:first-child {
+      background-image: url('../assets/UserInfoCardFirst.png');
+      background-size: 100% 100%;
+    }
+    .chain_card:last-child {
+      background-image: url('../assets/UserInfoCardLast.png');
+      background-size: 100% 100%;
+    }
+    .chain_card h1 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .chain_card p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+    }
+    .chain_card:hover {
+      box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.2);
+    }
+  }
+}

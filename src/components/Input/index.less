@@ -1,0 +1,47 @@
+.input_container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 54Px;
+}
+
+.input {
+  border: 1Px solid rgba(123, 65, 255, 0.5);
+  font-family: Avenir-Medium, Microsoft YaHei;
+  font-size: 16Px;
+  color: rgba(123, 65, 255, 0.7);
+  height: 38Px;
+  background: transparent;
+  padding: 8Px 20Px;
+
+  &::placeholder {
+    font-family: Avenir-Medium, Microsoft YaHei;
+    font-size: 16px;
+    color: rgba(123, 65, 255, 0.7);
+  }
+
+  &:focus {
+    outline:none;
+    border: 1Px solid rgba(123, 65, 255);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+  &:disabled{
+      background-color: #D5CBD6;
+      cursor:not-allowed;
+  }
+  &:disabled::placeholder{
+      color: #FAF8FF ;
+  }
+}
+
+.warning {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 38Px;
+  font-size: 12Px;
+  line-height: 12Px;
+  color: #d73838;
+  white-space: nowrap;
+}

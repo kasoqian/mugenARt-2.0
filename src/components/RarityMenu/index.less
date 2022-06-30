@@ -1,0 +1,74 @@
+.container{
+    width: 100%;
+}
+.icon{
+    width: 90Px;
+    height: 90Px;
+    background-size: 100% 100%;
+    transition: background-image 0.3s;
+}
+.ur{
+    margin-left: 38Px;
+}
+
+.ssr{
+    margin-left: 38Px;
+}
+.sr{
+    margin-top: -20Px;
+
+}
+.r{
+    margin-left: 38Px;
+    margin-top: -20Px;
+}
+.n{
+   margin-top: -20Px;
+}
+.ur_default{
+    background-image: url("./assets/atlas-ur-default.png");
+}
+.ssr_default{
+    background-image: url("./assets/atlas-ssr-default.png");
+}
+.sr_default{
+    background-image: url("./assets/atlas-sr-default.png");
+}
+.r_default{
+    background-image: url("./assets/atlas-r-default.png");
+}
+.n_default{
+    background-image: url("./assets/atlas-n-default.png");
+}
+
+.ur_active{
+    background-image: url("./assets//atlas-ur-active.png");
+}
+
+.ssr_active{
+    background-image: url("./assets//atlas-ssr-active.png");
+}
+
+.sr_active{
+    background-image: url("./assets//atlas-sr-active.png");
+}
+
+.r_active{
+    background-image: url("./assets//atlas-r-active.png");
+}
+
+.n_active{
+    background-image: url("./assets//atlas-n-active.png");
+}
+
+
+.icon::after{
+    content: "";
+    display: none ;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(218, 72, 72, 0.822);
+    position: absolute;
+    transform:translateX(30px) translateY(20px);
+}

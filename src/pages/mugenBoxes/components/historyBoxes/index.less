@@ -1,0 +1,31 @@
+.history-boxes {
+  width: 200px;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 30px;
+  .box-item {
+    position: relative;
+    padding: 25px 0;
+    font-family: Avenir-Heavy;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    cursor: pointer;
+    &.active {
+      color: #fff;
+    }
+    &.exchange-box-red::after {
+      content: ' ';
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+  }
+}

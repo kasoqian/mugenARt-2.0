@@ -1,0 +1,126 @@
+.container {
+    width: 720Px;
+    height: 521Px;
+    background-image: url("../../assets/atlas-bg.png");
+    background-size: 100% 100%;
+    padding-top: 45Px;
+
+    .title {
+        width: 80%;
+        height: 35Px;
+        margin: auto;
+        font-weight: 600;
+        line-height: 35Px;
+        background-image: url("../../assets/atlas-bg-ttile.png");
+        background-size: 100% 100%;
+    }
+
+    .firwork {
+        width: 85Px;
+        height: 85Px;
+        background-image: url("../../assets/atlas-bg-firework.png");
+        background-size: 100% 100%;
+        margin-left: -40Px;
+        margin-top: -30Px;
+    }
+
+    .close {
+        width: 50Px;
+        height: 50Px;
+        background-image: url("../../assets/atlas-bg-close.png");
+        background-size: 100% 100%;
+        float: right;
+        transform: translateY(-50Px) translateX(13Px);
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        padding: 10Px;
+        transform: translateY(-45Px);
+    }
+
+    .left_menu_bar {
+        width: 127Px;
+    }
+
+    .card_list {
+        height: 330Px;
+        min-width: 577Px;
+        display: flex;
+        overflow-y: auto;
+        flex-wrap: wrap;
+    }
+
+    .mask {
+        position: relative;
+        background: linear-gradient(to top, rgba(1, 1, 1, .7) 0%, rgba(1, 1, 1, .5) 80%, rgba(1, 1, 1, 0.0) 100%);
+        width: 100%;
+        margin-left: auto;
+        height: 80Px;
+        margin-top: -50Px;
+        z-index: 100;
+    }
+
+    .card_box {
+        margin: 6Px;
+        text-align: center;
+        width: 120Px;
+
+        img {
+            width: 120Px;
+            height: 120Px;
+            border-radius: 4Px;
+            transition: filter 2s;
+            filter: grayscale(0%);
+        }
+
+        p {
+            line-height: 2;
+            color: rgba(255, 255, 255, .5);
+            font-size: 10Px;
+            word-break: break-all;
+            height: 30Px;
+            overflow: hidden;
+        }
+    }
+
+    .notHave {
+        img {
+            filter: grayscale(100%);
+        }
+    }
+
+    .nodata {
+        transform: scale(1.5) translateX(80Px) translateY(50Px);
+        opacity: 0.7;
+        height: 100Px;
+        color: rgba(255, 255, 255, .7);
+    }
+
+}
+
+.card_list::-webkit-scrollbar {
+    width: 4Px;
+}
+
+.card_list::-webkit-scrollbar-thumb {
+    width: 10Px;
+    border-radius: 6Px;
+    background-image: linear-gradient(#9D17D7, #328BCD);
+}
+
+.card_list::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: rgba(13, 160, 240, 0.3);
+}
+
+/*       ::-webkit-scrollbar-thumb:horizontal {
+        background-color: lightseagreen;
+      }
+      ::-webkit-scrollbar-track:horizontal {
+        background-color: lightsalmon;
+      }
+      ::-webkit-scrollbar-corner {
+        background-color: red;
+      } */

@@ -1,0 +1,28 @@
+.card-list {
+    position: fixed;
+    z-index: 20;
+    left: 90px;
+    top: 60px;
+    display: flex;
+    flex-direction: row;
+
+    .result-card {
+        flex: 0 0 262px;
+    }
+
+    &.translate-x {
+        transform: translateX(262px);
+        transition: transform 1s;
+    }
+
+    .card-enter {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+
+    .card-enter-active {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 1s, transform 1s;
+    }
+}

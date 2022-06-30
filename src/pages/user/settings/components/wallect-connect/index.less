@@ -1,0 +1,73 @@
+.contaienr {
+  width: 266Px;
+  height: 279Px;
+  background: url('./assets/UserSettingConnectHashplette.png') center / cover no-repeat;
+  padding-top: 60Px;
+  .title {
+    font-family: Avenir-Heavy;
+    font-size: 16Px;
+    color: #7B41FF;
+    text-align: center;
+  }
+  .divider {
+    width: 220Px;
+    height: 10Px;
+    margin: 10px auto 0;
+    background: url('./assets/UserSettingModelDivider.png') center / cover no-repeat;
+  }
+  .btn_first {
+    margin: 31Px auto 0;
+    width: 164Px;
+    height: 33Px;
+    line-height: 33Px;
+    font-family: Avenir-Heavy;
+    font-size: 14Px;
+    color: #FFFFFF;
+    text-align: center;
+    background: url('./assets/UserSettingModelButtonBg.png') center / cover no-repeat;
+    cursor: pointer;
+  }
+  .btn_last {
+    margin: 16Px auto 0;
+    width: 164Px;
+    height: 32Px;
+    line-height: 32Px;
+    font-family: Avenir-Black;
+    font-size: 12Px;
+    color: #7B41FF;
+    text-align: center;
+    border: 1Px solid #7B41FF;
+    cursor: pointer;
+  }
+
+  .loading {
+    margin: 25Px auto;
+
+    .text {
+      opacity: 0.6;
+      font-family: Avenir-Book;
+      font-size: 12Px;
+      color: #7B41FF;
+      text-align: center;
+      line-height: 12Px;
+      margin-top: 10Px;
+    }
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading_icon {
+  width: 65Px;
+  height: 66Px;
+  margin: 0 auto;
+  background: url("./assets/loading.png") center / cover no-repeat;
+  animation: loader 1.5s linear infinite;
+}

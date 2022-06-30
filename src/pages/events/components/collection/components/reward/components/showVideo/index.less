@@ -1,0 +1,26 @@
+.award {
+  position: absolute;
+  z-index: 10;
+  transform: translateX(-776px) translateY(-120px);
+  height: 760px;
+  width: 700px;
+  background-color: #000;
+  padding-top: 67px;
+  video {
+    width: 700px;
+    height: 500px;
+  }
+  .video {
+    width: 700px;
+    height: 500px;
+    background-color: #000000;
+  }
+  .video::before {
+    content: ' ';
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background-image: url('./assets/mask.png');
+    background-size: 100% 100%;
+  }
+}

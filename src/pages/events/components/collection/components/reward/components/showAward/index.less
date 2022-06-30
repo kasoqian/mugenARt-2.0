@@ -1,0 +1,74 @@
+.container {
+    width: 955Px;
+    height: 695.66Px;
+    background-image: url('./assets/award-bg.png');
+    background-size: 100% 100%;
+    text-align: center;
+    zoom: 0.8;
+}
+
+.content {
+    margin-top: 45Px;
+}
+
+.title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 24Px;
+    line-height: 30Px;
+}
+
+.rewardImg {
+    width: 343Px;
+    height: 313Px;
+    margin: auto;
+    margin-top: 100Px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 225Px;
+        height: 225Px;
+    }
+
+    &::before {
+        content: '';
+        width: 343Px;
+        height: 313Px;
+        position: absolute;
+        background-image: url('./assets/nft-lighter.png');
+        background-size: 100% 100%;
+    }
+}
+
+.close {
+    z-index: 1;
+    width: 50Px;
+    height: 50Px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.close_icon {
+    transform: translateY(130Px) translateX(-11Px);
+}
+
+.close_icon::before,
+.close_icon::after {
+    content: " ";
+    position: absolute;
+    height: 3Px;
+    width: 30Px;
+    background-color: #7d44ff;
+    border-radius: 4Px;
+}
+
+.close_icon::before {
+    transform: rotate(45deg);
+}
+
+.close_icon::after {
+    transform: rotate(-45deg);
+}

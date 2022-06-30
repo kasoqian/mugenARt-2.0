@@ -1,0 +1,40 @@
+.nav {
+  position: absolute;
+  top: 140px;
+  left: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .label {
+    position: relative;
+    width: 270px;
+    height: 60px;
+    background: rgba(44, 35, 62, 0.3);
+    line-height: 60px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-family: Avenir-Heavy;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+
+    &.add-border {
+      border: 1px solid rgba(108, 43, 249, 0.2);
+    }
+
+    &.active {
+      color: #ffffff;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #6c2bf9;
+        width: 4px;
+        height: 60px;
+      }
+    }
+  }
+}

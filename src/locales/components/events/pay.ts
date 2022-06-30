@@ -1,0 +1,33 @@
+export const enEventsPay = {
+  'events.pay.halving': 'Halving Phase :',
+  'events.pay.data': 'My Data',
+  'events.pay.pool': 'Total PLT Rewards in the Pool',
+  'events.pay.poolRemark': 'Update every 3 days',
+  'events.pay.poolTime': 'Reward Allocating in Days',
+  'events.pay.user1': 'Rewards to Claim',
+  'events.pay.user2': 'update every 3 days',
+  'events.pay.userNft': 'NFTs Valid for Staking',
+  'events.pay.table1': 'Date of Allocating',
+  'events.pay.table2': 'Amount Allocated',
+  'events.pay.table3': 'Receipt request date',
+  'events.pay.table4': 'Status',
+  'events.pay.tableSuccess': 'Allocated',
+  'events.pay.bg': require('@/pages/events/components/pay/assets/ruleEn.png'),
+};
+
+export const jaEventsPay = {
+  'events.pay.halving': '半減期：',
+  'events.pay.data': 'データ',
+  'events.pay.pool': 'Total受取可能PLT',
+  'events.pay.poolRemark': '三日ごとに更新',
+  'events.pay.poolTime': '支払い日までのカウントダウン',
+  'events.pay.user1': '受取可能PLT',
+  'events.pay.user2': '三日ごとに更新',
+  'events.pay.userNft': '有効NFT所有',
+  'events.pay.table1': '割当日',
+  'events.pay.table2': '受取PLT',
+  'events.pay.table3': '受取申請日',
+  'events.pay.table4': 'ステータス',
+  'events.pay.tableSuccess': '送信済み',
+  'events.pay.bg': require('@/pages/events/components/pay/assets/ruleJa.png'),
+};

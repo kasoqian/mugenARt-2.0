@@ -1,0 +1,35 @@
+stages:
+  - test
+  - build
+
+test:
+  stage: build
+  tags:
+    - front-test
+  only:
+    - test
+  script:
+    - whoami
+    - git add .
+    - git clean -dfx
+    - npm install
+    - npm run build
+    - rm -rf /www/mugen
+    - mkdir -p /www/mugen
+    - cp -rf dist/* /www/mugen
+
+build:
+  stage: build
+  tags:
+    - front-test2
+  only:
+    - main
+  script:
+    - whoami
+    - git add .
+    - git clean -dfx
+    - npm install
+    - npm run build
+    - rm -rf /www/mugen
+    - mkdir -p /www/mugen
+    - cp -rf dist/* /www/mugen
